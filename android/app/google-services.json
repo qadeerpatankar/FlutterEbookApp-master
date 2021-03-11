@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "326191428732",
+    "project_id": "a-ebook-application",
+    "storage_bucket": "a-ebook-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326191428732:android:40a07ea6596747d517c5f9",
+        "android_client_info": {
+          "package_name": "dev.jideguru.flutterEbookApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326191428732-0gavl77qd4eojommo0bao58ajqqshjo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFmUW8BG7b2K4sRcBvNP1rWQCiTj31f9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326191428732-0gavl77qd4eojommo0bao58ajqqshjo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
