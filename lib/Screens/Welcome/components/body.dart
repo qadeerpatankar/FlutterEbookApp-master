@@ -17,8 +17,8 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO EDU",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "    Welcome to Bookbot",
+              style: TextStyle(fontSize: 24,fontWeight: FontWeight.w900, color: Color(0xFF502E80)),
             ),
             SizedBox(height: size.height * 0.05),
             SvgPicture.asset(
@@ -40,7 +40,7 @@ class Body extends StatelessWidget {
               },
             ),
             RoundedButton(
-              text: "SIGN UP",
+              text: "Create An Account",
               color: kPrimaryLightColor,
               textColor: Colors.black,
               press: () {

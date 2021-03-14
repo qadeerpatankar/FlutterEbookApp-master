@@ -131,10 +131,18 @@ class _ProfileState extends State<Profile> {
       builder: (_) {
         return AlertDialog(
           title: Text(
-            'About',
+            'Bookbot',
           ),
           content: Text(
-            'Simple eBook app by JideGuru',
+            'An User-Friendly Ebook Android Application.'
+                '\n\n Features :'
+                '\n - User Authentication'
+                '\n - Intuitive List of Books'
+                '\n - Download & Read Books'
+                '\n - Basic Search Navigation '
+                '\n - Reading Format Preferences'
+                '\n - Dark Mode'
+                '\n\n            Developed By -  Abdul Qadeer :)',
           ),
           actions: <Widget>[
             FlatButton(

@@ -54,10 +54,10 @@ class _MainScreenState extends State<MainScreen> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Feather.settings,
+                Feather.menu,
               ),
               title: Text(
-                'Settings',
+                'Menu',
               ),
             ),
           ],

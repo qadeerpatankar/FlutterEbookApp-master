@@ -81,7 +81,7 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin {
           Text(
             '$title',
             style: TextStyle(
-              fontSize: 20.0,
+              fontSize: 22.0,
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -117,11 +117,11 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin {
 
   _buildGenreSection(HomeProvider homeProvider) {
     return Container(
-      height: 50.0,
+      height: 58.0,
       child: Center(
         child: ListView.builder(
           primary: false,
-          padding: EdgeInsets.symmetric(horizontal: 15.0),
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
           scrollDirection: Axis.horizontal,
           itemCount: homeProvider?.top?.feed?.link?.length ?? 0,
           shrinkWrap: true,

@@ -10,7 +10,7 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   startTimeout() {
-    return new Timer(Duration(seconds: 2), handleTimeout);
+    return new Timer(Duration(seconds: 3), handleTimeout);
   }
 
   void handleTimeout() {
@@ -39,9 +39,9 @@ class _SplashState extends State<Splash> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              "assets/images/app-icon.png",
-              height: 300.0,
-              width: 300.0,
+              "assets/images/applogo.jpg",
+              height: 200.0,
+              width: 200.0,
             ),
           ],
         ),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ebook_app/Screens/Login/login_screen.dart';
 import 'package:flutter_ebook_app/Screens/Signup/components/or_divider.dart';
 import 'package:flutter_ebook_app/Screens/Signup/components/social_icon.dart';
+import 'package:flutter_ebook_app/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter_ebook_app/components/already_have_an_account_acheck.dart';
 import 'package:flutter_ebook_app/components/rounded_button.dart';
 import 'package:flutter_ebook_app/components/rounded_input_field.dart';
@@ -84,10 +85,7 @@ class _BodyState extends State<Body> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              "SIGNUP",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
+
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
               "assets/icons/signup.svg",
@@ -108,7 +106,7 @@ class _BodyState extends State<Body> {
               },
             ),
             RoundedButton(
-              text: "SIGNUP",
+              text: "Create Account",
               press: () {
                 _submitForm();
               },
@@ -141,7 +139,16 @@ class _BodyState extends State<Body> {
                 ),
                 SocalIcon(
                   iconSrc: "assets/icons/google-plus.svg",
-                  press: () {},
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return WelcomeScreen();
+                        },
+                      ),
+                    );
+                  },
                 ),
               ],
             )

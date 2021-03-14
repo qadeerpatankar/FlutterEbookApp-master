@@ -96,7 +96,7 @@ class _BodyState extends State<Body> {
           children: <Widget>[
             Text(
               "LOGIN",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold, color: Color(0xFF6F35A5)),
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
