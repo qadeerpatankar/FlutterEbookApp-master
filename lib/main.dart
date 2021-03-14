@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           title: Constants.appName,
           theme: themeData(appProvider.theme),
           darkTheme: themeData(ThemeConfig.darkTheme),
-          home: Splash(),
+          home: LandingPage(),
         );
       },
     );
