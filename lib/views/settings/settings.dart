@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ebook_app/Screens/Login/login_screen.dart';
 import 'package:flutter_ebook_app/theme/theme_config.dart';
@@ -15,6 +16,20 @@ class Profile extends StatefulWidget {
 
 class _ProfileState extends State<Profile> {
   List items;
+
+  Future<LoginScreen> _signOut() async {
+    await FirebaseAuth.instance.signOut();
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) {
+          return LoginScreen();
+        },
+      ),
+    );
+    return new LoginScreen();
+  }
+
 
   @override
   void initState() {
@@ -48,7 +63,7 @@ class _ProfileState extends State<Profile> {
       {
         'icon': Feather.log_out,
         'title': 'Sign Out',
-        'function': () => _pushPage(LoginScreen()),
+        'function': () => _signOut(),//_pushPage(LoginScreen()),
       },
     ];
   }
@@ -142,7 +157,7 @@ class _ProfileState extends State<Profile> {
                 '\n - Basic Search Navigation '
                 '\n - Reading Format Preferences'
                 '\n - Dark Mode'
-                '\n\n            Developed By -  Abdul Qadeer :)',
+                '\n\n     Developed By -  Abdul Qadeer :)',
           ),
           actions: <Widget>[
             FlatButton(

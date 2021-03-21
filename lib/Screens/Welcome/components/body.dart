@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ebook_app/Screens/Login/login_screen.dart';
 import 'package:flutter_ebook_app/Screens/Signup/signup_screen.dart';
 import 'package:flutter_ebook_app/components/rounded_button.dart';
-import 'package:flutter_ebook_app/constants.dart';
+import 'package:flutter_ebook_app/util/consts.dart';
 import 'package:flutter_svg/svg.dart';
 import 'background.dart';
 

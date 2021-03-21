@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ebook_app/Screens/Welcome/welcome_screen.dart';
-import 'package:flutter_ebook_app/constants.dart';
+import 'package:flutter_ebook_app/util/consts.dart';
 import 'package:flutter_ebook_app/views/splash/splash.dart';
 
 class LandingPage extends StatelessWidget {

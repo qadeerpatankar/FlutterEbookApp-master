@@ -4,6 +4,7 @@ import 'package:flutter_ebook_app/Screens/Login/login_screen.dart';
 import 'package:flutter_ebook_app/Screens/Signup/components/or_divider.dart';
 import 'package:flutter_ebook_app/Screens/Signup/components/social_icon.dart';
 import 'package:flutter_ebook_app/Screens/Welcome/welcome_screen.dart';
+import 'package:flutter_ebook_app/Screens/email_verify.dart';
 import 'package:flutter_ebook_app/components/already_have_an_account_acheck.dart';
 import 'package:flutter_ebook_app/components/rounded_button.dart';
 import 'package:flutter_ebook_app/components/rounded_input_field.dart';
@@ -45,6 +46,10 @@ class _BodyState extends State<Body> {
     try {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: _registerEmail, password: _registerPassword);
+      User _user = FirebaseAuth.instance.currentUser;
+      if(!_user.emailVerified) {
+        await _user.sendEmailVerification();
+      }
       return null;
     } on FirebaseAuthException catch(e) {
       if (e.code == 'weak-password') {
@@ -108,6 +113,14 @@ class _BodyState extends State<Body> {
             RoundedButton(
               text: "Create Account",
               press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return EmailVerify();
+                    },
+                  ),
+                );
                 _submitForm();
               },
             ),

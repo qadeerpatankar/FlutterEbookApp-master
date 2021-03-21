@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ebook_app/constants.dart';
+import 'package:flutter_ebook_app/util/consts.dart';
 
 
 
