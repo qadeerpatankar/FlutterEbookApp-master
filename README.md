@@ -51,6 +51,6 @@ icon</a>
 | [**EPub Viewer**](https://pub.dev/packages/epub_viewer) | A flutter plugin for Folioreader to read ePub files |
 
 
-**Olusegun Festus Babajide**
+**Abdul Qadeer Patankar**
 [![Linkedin Follow](www.linkedin.com/in/qpat)
 
