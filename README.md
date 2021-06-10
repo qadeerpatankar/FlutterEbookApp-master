@@ -52,5 +52,5 @@ icon</a>
 
 
 **Olusegun Festus Babajide**
-[![Twitter Follow](https://img.shields.io/twitter/follow/iamjideguru.svg?style=social)](https://twitter.com/iamjideguru)
+[![Linkedin Follow](www.linkedin.com/in/qpat)
 
